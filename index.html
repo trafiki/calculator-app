@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="screen">
+      <div id="prev-operation"></div>
+      <div id="operand"></div>
+    </div>
+    <div class="keypad">
+      <div class="keypad-row">
+        <button type="button" name="button" id="all-clear">AC</button>
+        <button type="button" name="button" id="negation">+/-</button>
+        <button type="button" name="button" id="delete">DEL</button>
+        <button type="button" name="button" class="operation">&divide;</button>
+      </div>
+      <div class="keypad-row">
+        <button type="button" name="button" class="num">1</button>
+        <button type="button" name="button" class="num">2</button>
+        <button type="button" name="button" class="num">3</button>
+        <button type="button" name="button" class="operation">x</button>
+      </div>
+      <div class="keypad-row">
+        <button type="button" name="button" class="num">4</button>
+        <button type="button" name="button" class="num">5</button>
+        <button type="button" name="button" class="num">6</button>
+        <button type="button" name="button" class="operation">-</button>
+      </div>
+      <div class="keypad-row">
+        <button type="button" name="button" class="num">7</button>
+        <button type="button" name="button" class="num">8</button>
+        <button type="button" name="button" class="num">9</button>
+        <button type="button" name="button" class="operation">+</button>
+      </div>
+      <div class="keypad-row">
+        <button type="button" name="button" class="num">.</button>
+        <button type="button" name="button" class="num">0</button>
+        <button type="button" name="button" class="span-2-btn" id="equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
