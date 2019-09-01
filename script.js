@@ -61,8 +61,12 @@ operationButtons.forEach(button => {
       prevOperationText.textContent = currentOperand.toLocaleString() + " " + button.textContent;
       operation = button.textContent;
     } else {
-      // Disallows the effect of pressing the operation buttons twice consecutively (which would have set the currentOperand to 0)
-      if (!currentOperandText.textContent) return;
+      // Allows user to to able to change operator
+      if (!currentOperandText.textContent) {
+        prevOperationText.textContent = currentOperand.toLocaleString() + " " + button.textContent;
+        operation = button.textContent;
+        return;
+      };
       getCurrentOperand()
       prevOperationText.textContent = currentOperand.toLocaleString() + " " + button.textContent;
       operation = prevOperationText.textContent.slice(-1); // get the latest operation
